@@ -40,7 +40,7 @@ void MainWindow::clickPushButton()
 {
     logging::addAppender(std::make_unique<logging::ConsoleAppender>("console", logging::Level::Debug));
 
-    std::string filename = "/home/hryniuk/projekty/Wangscape/doc/examples/example2/example_options.json";
+    std::string filename = "../doc/examples/example2/example_options.json";
 
     OptionsManager optionsManager(filename);
     const Options& options = optionsManager.getOptions();
