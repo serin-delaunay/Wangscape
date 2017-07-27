@@ -9,13 +9,13 @@
   <ItemDefinitionGroup>
     <ClCompile />
     <Link>
-      <AdditionalDependencies>Qt5Widgetsd.lib;Qt5Cored.lib;qtmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Widgets.lib;Qt5Core.lib;qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /y /d "C:\Qt\5.9.1\msvc2015\bin\Qt5Widgetsd.dll" "$(TargetDir)"
-xcopy /y /d "C:\Qt\5.9.1\msvc2015\bin\Qt5Cored.dll" "$(TargetDir)"
-xcopy /y /d "C:\Qt\5.9.1\msvc2015\bin\Qt5Guid.dll" "$(TargetDir)"
-xcopy /y /d "C:\Qt\5.9.1\msvc2015\plugins\platforms\qwindowsd.dll" "$(TargetDir)\plugins\"</Command>
+xcopy /y /d "C:\Qt\5.9.1\msvc2015\bin\Qt5Core.dll" "$(TargetDir)"
+xcopy /y /d "C:\Qt\5.9.1\msvc2015\bin\Qt5Gui.dll" "$(TargetDir)"
+xcopy /y /d "C:\Qt\5.9.1\msvc2015\plugins\platforms\qwindows.dll" "$(TargetDir)\plugins\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy Qt5 dlls to output dir</Message>
